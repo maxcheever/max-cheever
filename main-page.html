@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Max Cheever</title>
+    <link href="main-page.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="icon-container">
+      <ion-icon name="grid-outline" class="menu-icon"></ion-icon>
+    </div>
+
+    <div class="main-container">
+      <img src="./images/text.jpg">
+      <img src="./images/woman.png">
+    </div>
+
+    <div class="hover-container">
+
+      <div class="top-hover">
+        <!-- before :hover -->
+        <div class="phone-container">
+          <ion-icon name="call-outline" class="phone-icon"></ion-icon>
+        </div>
+        <!-- after :hover -->
+        <!-- might be able to put phone number and icon in the same div an just hide one or the other depending on hover, this could work with email and resume as well (not social media I don't think) -->
+        <div class="phone-number">
+          <p class="number">207-838-0463</p>
+        </div>
+        <!-- before :hover -->
+        <div class="email-container">
+          <ion-icon name="send-outline" class="email-icon"></ion-icon>
+        </div>
+        <!-- after :hover -->
+        <div class="email-address">
+          <!-- might change it to a link if I can figure out how to make it link to an email to me -->
+          <p class="email">maxcheever8@hotmail.com</p>
+        </div>
+      </div>
+      <div class="bottom-hover">
+        <div class="social">
+          <!-- before :hover -->
+          <div class="social-icon">
+            <ion-icon name="share-social-outline" class="social-media"></ion-icon>
+          </div>
+          <!-- after :hover pt1 -->
+          <div class="social-top">
+            <ion-icon name="logo-instagram" class="insta"></ion-icon>
+            <ion-icon name="logo-twitter" class="twitter"></ion-icon>
+          </div>
+          <div class="social-bottom">
+            <ion-icon name="logo-snapchat" class="snap"></ion-icon>
+            <ion-icon name="logo-tiktok" class="tiktok"></ion-icon>
+          </div>
+          <!-- after :hover pt2 -->
+          <div class="insta-hover">
+            <a href="https://www.instagram.com/loocsixam/?hl=en">@loocsixam</a>
+          </div>
+          <div class="twitter-hover">
+            <a href="https://twitter.com/cheevermax?lang=en">@CheeverMax</a>
+          </div>
+          <div class="snap-hover">
+            <p class="snap-user">@maxcheever</p>
+          </div>
+          <div class="tiktok-hover">
+            <a href="https://www.tiktok.com/@maxcheever5?lang=en">@maxcheever5</a>
+          </div>
+        </div>
+        <div class="resume-container">
+          <a href="./pdf/Max-Cheever-Resume.pdf"><ion-icon name="document-outline" class="resume-icon"></ion-icon></a>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+  </body>
+</html>
