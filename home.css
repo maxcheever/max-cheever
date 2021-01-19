@@ -1,12 +1,118 @@
+html {
+  height: 100%;
+}
+
 body {
   background-color: black;
   margin: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+.icon-container {
+  position: fixed;
+  top: 1.5vw;
+  left: 1.5vw;
+  height: 100%;
+  width: 10%;
 }
 
 .menu-icon {
+  font-size: 10vw;
   color: white;
+  margin: 0;
+  /* animation: pulsate-fwd 2s ease-in-out infinite both 6s, fade paused; */
 }
+
+/* how do i add two animations to the same object */
+
+/* @keyframes pulsate-fwd {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+} */
+
+.main-container {
+  width: 90%;
+  height: 100%;
+  margin-left: 11vw;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+}
+
+.logo {
+  height: 19vw;
+  position: fixed;
+  top: -3vw;
+}
+
+.woman {
+  height: 50vw;
+  position: fixed;
+  bottom: 0vw;
+  right: 25vw;
+}
+
+/* this is because i am using vw so everything is going to shrink according to width and is sized according to width, but with devices like chromebooks, the width is a lot longer than the height so the woman is displayed quite large */
+@media screen and (max-height: 720px) {
+
+  .woman {
+    height: 35vw;
+    right: 30vw;
+  }
+
+}
+
+#fade {
+  animation: fade 5s both 1s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 .hover-container {
   display: none;
+}
+
+
+
+
+@media screen and (max-width: 565px) {
+
+  .icon-container {
+    position: fixed;
+    top: 20vh;
+    left: 37vw;
+  }
+
+  .menu-icon {
+    font-size: 15vh;
+  }
+
+  .logo {
+    position: fixed;
+    left: 8vw;
+  }
+
+  .woman {
+    height: 40vh;
+    position: fixed;
+    right: 20vw;
+  }
+
 }
