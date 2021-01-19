@@ -6,6 +6,8 @@
     <title>Welcome - Max Cheever</title>
     <link href="welcome.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <!-- this is the icon library for the icons used in this website -->
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
   </head>
   <body>
 
@@ -15,18 +17,17 @@
         <!-- i had to use a different icon library because font awesome did not have a flashlight icon that I could use (the only available ones were "pro") -->
         <ion-icon name="flashlight-outline" class="flashlight"></ion-icon>
       </div>
-
+      <!-- <span> tags are there so I can scale each individual letter to make it look like the text is shining out of the flashlight if I can figure out how to do it, I might end up removing it if it does not look good  -->
       <div class="welcome-container">
-        <h1 id="welcome_text">Welcome</h1>
+        <h1 id="welcome_text"><span class="w">W</span><span class="e">E</span><span class="l">L</span><span class="c">C</span><span class="o">O</span><span class="m">M</span><span class="E">E</span></h1>
       </div>
 
-      <a href="main-page.html" class="continue">Continue</a>
+      <a href="home.html" class="continue">Continue</a>
       
     </div>
 
 
     <script src="script.js"></script>
-    <!-- this is the icon library for the flashlight -->
-    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    
   </body>
 </html>
