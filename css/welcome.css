@@ -230,7 +230,7 @@ body {
   }
 
   .flashlight {
-    transform: rotate(44deg);
+    transform: rotate(45deg);
     position: fixed;
     top: -5vw;
     left: 7vw;

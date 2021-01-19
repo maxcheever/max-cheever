@@ -13,27 +13,45 @@ body {
   position: fixed;
   top: 1.5vw;
   left: 1.5vw;
-  height: 100%;
-  width: 10%;
+  height: 15%;
+  width: 15%;
+  z-index: 99;
 }
 
 .menu-icon {
   font-size: 10vw;
   color: white;
   margin: 0;
-  /* animation: pulsate-fwd 2s ease-in-out infinite both 6s, fade paused; */
+  animation: fade 5s both 1s;
+  /* animation: pulsate 2s ease-in-out infinite both 6s; */
 }
 
-/* how do i add two animations to the same object */
-
-/* @keyframes pulsate-fwd {
+/* @keyframes fade-plus-pulse {
   0% {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 100%;
+  }
+  35% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.04);
+  }
+  45% {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.04);
   }
-  100% {
+  55% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.04);
+  }
+  65% {
     transform: scale(1);
   }
 } */
@@ -87,9 +105,71 @@ body {
 
 .hover-container {
   display: none;
+  position: fixed;
+  z-index: 100;
+  background-color: white;
+  width: 87%;
+  height: 100%;
+  margin-left: 13vw;
 }
 
+#big-box {
+  display: flex;
+  height: 50%;
+  justify-content: space-around;
+  align-items: center;
+}
 
+#box {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  transition: all 2s;
+}
+
+#box:hover {
+  background-color: rgb(175, 175, 175);
+  cursor: pointer;
+}
+
+#hover-icon {
+  font-size: 12vw;
+}
+
+.phone-icon {
+  position: relative;
+  top: 15vh;
+}
+
+.email-icon {
+  position: relative;
+  top: 15vh;
+}
+
+.social-media {
+  position: relative;
+  top: 15vh;
+}
+
+.resume-icon {
+  position: relative;
+  top: 15vh;
+  text-decoration: none;
+  color: black;
+}
+
+#hidden {
+  display: none;
+}
+
+#social-icons {
+  display: none;
+}
+
+.menu-container:hover .hover-container {
+  display: block;
+  animation: 
+}
 
 
 @media screen and (max-width: 565px) {
