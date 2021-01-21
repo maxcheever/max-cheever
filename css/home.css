@@ -23,38 +23,20 @@ body {
   color: white;
   margin: 0;
   animation: fade 5s both 1s;
-  /* animation: pulsate 2s ease-in-out infinite both 6s; */
 }
 
-/* @keyframes fade-plus-pulse {
+.menu-icon:hover {
+  animation: fade 5s both 1s, rotate 1s ease-out both;
+}
+
+@keyframes rotate {
   0% {
-    opacity: 0%;
+    transform: rotate(0);
   }
-  25% {
-    opacity: 100%;
+  100% {
+    transform: rotate(360deg);
   }
-  35% {
-    transform: scale(1);
-  }
-  40% {
-    transform: scale(1.04);
-  }
-  45% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.04);
-  }
-  55% {
-    transform: scale(1);
-  }
-  60% {
-    transform: scale(1.04);
-  }
-  65% {
-    transform: scale(1);
-  }
-} */
+}
 
 .main-container {
   width: 90%;
@@ -141,9 +123,37 @@ body {
   top: 17vh;
 }
 
+.number {
+  display: none;
+  font-family: Fredoka one;
+  font-size: 2.5vw;
+  position: fixed;
+  left: 14vw;
+  top: 35vh;
+}
+
+.phone-container:hover .number {
+  display: block;
+  animation: fade 2s ease-in-out both;
+}
+
 .email-icon {
   position: relative;
   top: 17vh;
+}
+
+.email {
+  display: none;
+  font-family: Fredoka one;
+  font-size: 2.5vw;
+  position: fixed;
+  left: 50vw;
+  top: 35vh;
+}
+
+.email-container:hover .email {
+  display: block;
+  animation: fade 2s ease-in-out both;
 }
 
 .social-media {
@@ -158,13 +168,38 @@ body {
   color: black;
 }
 
-#hidden {
-  display: none;
+#social-icons {
+  font-size: 6vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 
-#social-icons {
+.social-icons {
   display: none;
-  position: fixed
+  position: fixed;
+  top: 54vh;
+  left: 6vw;
+}
+
+.social:hover .social-icons {
+  display: block;
+  animation: fade 2s ease-in-out both;
+}
+
+#link {
+  /* display: none; */
+  position: fixed;
+  top: 90vh;
+  left: 13vw;
+  font-family: Fredoka One;
+  font-size: 2.5vw;
+  text-decoration: none;
+  color: black;
+}
+
+.insta:hover .instagram {
+  display: block;
+  animation: fade 2s ease-in-out both;
 }
 
 .menu-container:hover .hover-container {
