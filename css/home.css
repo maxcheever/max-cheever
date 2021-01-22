@@ -1,3 +1,7 @@
+* {
+  cursor: url("../cursor/main-cursor.png"), default;
+}
+
 html {
   height: 100%;
 }
@@ -111,7 +115,6 @@ body {
 
 #box:hover {
   background-color: rgb(175, 175, 175);
-  cursor: pointer;
 }
 
 #hover-icon {
