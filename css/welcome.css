@@ -21,6 +21,10 @@ body {
   width: 100;
 }
 
+ion-icon {
+  pointer-events: none;
+}
+
 .flashlight-container {
   height: 100%;
   width: 100%;

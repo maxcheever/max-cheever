@@ -66,10 +66,10 @@ body {
 }
 
 /* this is because i am using vw so everything is going to shrink according to width and is sized according to width, but with devices like chromebooks, the width is a lot longer than the height so the woman is displayed quite large */
-@media screen and (max-height: 720px) {
+@media screen and (max-height: 800px) {
 
   .woman {
-    height: 35vw;
+    height: 34vw;
     right: 30vw;
   }
 
@@ -124,6 +124,7 @@ body {
 .phone-icon {
   position: relative;
   top: 17vh;
+  
 }
 
 .number {
@@ -200,10 +201,11 @@ body {
   color: black;
 }
 
-.insta:hover .instagram {
+/* this doesn't work */
+/* .insta:hover .instagram {
   display: block;
   animation: fade 2s ease-in-out both;
-}
+} */
 
 .menu-container:hover .hover-container {
   display: block;
