@@ -13,13 +13,17 @@ body {
   height: 100%;
 }
 
+a {
+  color: black;
+}
+
 .icon-container {
   position: fixed;
   top: 1.5vw;
   left: 1.5vw;
   height: 15%;
   width: 15%;
-  z-index: 99;
+  z-index: 98;
 }
 
 .menu-icon {
@@ -92,7 +96,7 @@ body {
 .hover-container {
   display: none;
   position: fixed;
-  z-index: 100;
+  z-index: 99;
   background-color: white;
   width: 87%;
   height: 100%;
@@ -124,7 +128,7 @@ body {
 .phone-icon {
   position: relative;
   top: 17vh;
-  
+  pointer-events: none;
 }
 
 .number {
@@ -144,6 +148,7 @@ body {
 .email-icon {
   position: relative;
   top: 17vh;
+  pointer-events: none;
 }
 
 .email {
@@ -162,27 +167,28 @@ body {
 
 .social-media {
   position: relative;
-  top: 17vh;
+  top: 15vh;
+  pointer-events: none;
 }
 
 .resume-icon {
   position: relative;
-  top: 17vh;
+  top: 15vh;
   text-decoration: none;
   color: black;
 }
 
 #social-icons {
-  font-size: 6vw;
-  margin-left: 1vw;
-  margin-right: 1vw;
+  font-size: 3vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
 }
 
 .social-icons {
   display: none;
   position: fixed;
-  top: 54vh;
-  left: 6vw;
+  top: 88vh;
+  left: 8vw;
 }
 
 .social:hover .social-icons {
@@ -191,21 +197,35 @@ body {
 }
 
 #link {
-  /* display: none; */
-  position: fixed;
-  top: 90vh;
-  left: 13vw;
   font-family: Fredoka One;
-  font-size: 2.5vw;
+  font-size: 0.75vw;
   text-decoration: none;
   color: black;
 }
 
-/* this doesn't work */
-/* .insta:hover .instagram {
-  display: block;
-  animation: fade 2s ease-in-out both;
-} */
+.instagram {
+  position: fixed;
+  top: 94.5vh;
+  left: 9.25vw;
+}
+
+.twitter-link {
+  position: fixed;
+  top: 94.5vh;
+  left: 16vw;
+}
+
+.snapchat {
+  position: fixed;
+  top: 94.5vh;
+  left: 23.75vw;
+}
+
+.tik-tok {
+  position: fixed;
+  top: 94.5vh;
+  left: 30.5vw;
+}
 
 .menu-container:hover .hover-container {
   display: block;
@@ -246,7 +266,51 @@ body {
   .woman {
     height: 40vh;
     position: fixed;
-    right: 20vw;
+    right: 18.5vw;
+  }
+
+  #social-icons {
+    font-size: 5vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+  }
+
+  .social-icons {
+    display: none;
+    position: fixed;
+    top: 80vh;
+    left: 0.5vw;
+  }
+
+  #link {
+    font-family: Fredoka One;
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: black;
+  }
+
+  .instagram {
+    position: fixed;
+    top: 85vh;
+    left: 1vw;
+  }
+
+  .twitter-link {
+    position: fixed;
+    top: 85vh;
+    left: 10.5vw;
+  }
+
+  .snapchat {
+    position: fixed;
+    top: 85vh;
+    left: 22vw;
+  }
+
+  .tik-tok {
+    position: fixed;
+    top: 85vh;
+    left: 32.5vw;
   }
 
 }
