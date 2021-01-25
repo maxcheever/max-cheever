@@ -21,8 +21,7 @@ a {
   position: fixed;
   top: 1.5vw;
   left: 1.5vw;
-  height: 15%;
-  width: 15%;
+  width: 11.5vw;
   z-index: 98;
 }
 
@@ -44,6 +43,38 @@ a {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.gallery-container {
+  display: none;
+  width: 15vw;
+  height: 80vh;
+  position: fixed;
+  top: 15vh;
+  text-align: center;
+}
+
+.menu-container:hover .gallery-container {
+  display: block;
+  animation: fade 5s both;
+}
+
+.gallery-icon {
+  color: white;
+  font-size: 7vw;
+  position: fixed;
+  top: 45vh;
+  left: 3vw;
+}
+
+.gallery-text {
+  color: white;
+  position: fixed;
+  top: 54vh;
+  left: 2.9vw;
+  text-decoration: none;
+  font-family: Fredoka one;
+  font-size: 2vw;
 }
 
 .main-container {
@@ -256,6 +287,18 @@ a {
 
   .menu-icon {
     font-size: 15vh;
+  }
+
+  .gallery-icon {
+    position: fixed;
+    top: 46vh;
+    left: 3vw;
+  }
+
+  .gallery-text {
+    position: fixed;
+    top: 50vh;
+    left: 3vw;
   }
 
   .logo {
