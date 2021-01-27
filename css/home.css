@@ -45,6 +45,7 @@ a {
   }
 }
 
+/* fix hover problem if I can */
 .gallery-container {
   display: none;
   width: 15vw;
@@ -108,6 +109,16 @@ a {
     right: 30vw;
   }
 
+  .gallery-text {
+    position: fixed;
+    top: 56vh;
+    left: 2.9vw;
+  }
+
+  /* .phone-icon {
+    position: relative;
+    top: -5vh;
+  } */
 }
 
 #fade {
@@ -159,7 +170,6 @@ a {
 .phone-icon {
   position: relative;
   top: 17vh;
-  pointer-events: none;
 }
 
 .number {
