@@ -101,26 +101,6 @@ a {
   right: 25vw;
 }
 
-/* this is because i am using vw so everything is going to shrink according to width and is sized according to width, but with devices like chromebooks, the width is a lot longer than the height so the woman is displayed quite large */
-@media screen and (max-height: 800px) {
-
-  .woman {
-    height: 34vw;
-    right: 30vw;
-  }
-
-  .gallery-text {
-    position: fixed;
-    top: 56vh;
-    left: 2.9vw;
-  }
-
-  /* .phone-icon {
-    position: relative;
-    top: -5vh;
-  } */
-}
-
 #fade {
   animation: fade 5s both 1s;
 }
@@ -284,6 +264,82 @@ a {
     transform-origin: 0% 0%;
     opacity: 1;
   }
+}
+
+/* this is because i was using vw with the woman so everything is going to shrink according to width and is sized according to width, but with devices like chromebooks, the width is a lot longer than the height so the woman is displayed quite large */
+@media screen and (max-height: 800px) {
+
+  .woman {
+    height: 34vw;
+    right: 30vw;
+  }
+
+  .gallery-text {
+    position: fixed;
+    top: 56vh;
+    left: 2.9vw;
+  }
+
+  .phone-icon {
+    position: fixed;
+    top: 14vh;
+    left: 15vw;
+  }
+
+  .number {
+    position: fixed;
+    left: 13vw;
+    top: 35vh;
+  }
+
+  .email-icon {
+    position: fixed;
+    top: 14vh;
+    left: 59vw;
+  }
+
+  .social-media {
+    position: fixed;
+    top: 62vh;
+    left: 15vw; 
+  }
+
+  .social-icons {
+    position: fixed;
+    top: 88vh;
+    left: 6.75vw;
+  }
+
+  .instagram {
+    position: fixed;
+    top: 94.5vh;
+    left: 8vw;
+  }
+
+  .twitter-link {
+    position: fixed;
+    top: 94.5vh;
+    left: 14.75vw;
+  }
+
+  .snapchat {
+    position: fixed;
+    top: 94.5vh;
+    left: 22.1vw;
+  }
+
+  .tik-tok {
+    position: fixed;
+    top: 94.5vh;
+    left: 29.2vw;
+  }
+
+  .resume-icon {
+    position: fixed;
+    top: 62vh;
+    left: 59vw;
+  }
+
 }
 
 
