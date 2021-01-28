@@ -5,3 +5,68 @@
 body {
   background-color: black;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0;
+}
+
+.gallery {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.large-img-container {
+  margin-top: 3rem;
+  position: relative;
+  outline: 3px inset grey;
+  outline-offset: 2px;
+}
+
+#large-img {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+#main-txt {
+  display: block;
+  text-align: center;
+
+  /* uncomment 32-34 if you want the text to appear on the image */
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  
+  font-size: calc(1rem + 1vw);
+  font-weight: bold;
+  color: black;
+}
+
+p {
+  margin: 1rem 0 0;
+  font-size: calc(1rem + .5vw);
+  font-weight: bold;
+}
+
+.small-img-container {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image {
+  width: 25%;
+  min-width: 5rem;
+  height: auto;
+  margin: 1rem;
+}
+
+.image:hover {
+  outline: 2px solid;
+}
