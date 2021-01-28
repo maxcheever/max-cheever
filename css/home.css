@@ -32,7 +32,7 @@ a {
   animation: fade 5s both 1s;
 }
 
-.menu-icon:hover {
+.menu-container:hover .menu-icon {
   animation: fade 5s both 1s, rotate 1s ease-out both;
 }
 
@@ -58,6 +58,10 @@ a {
 .menu-container:hover .gallery-container {
   display: block;
   animation: fade 5s both;
+}
+
+.gallery-container:hover .hover-container {
+  display: block;
 }
 
 .gallery-icon {
