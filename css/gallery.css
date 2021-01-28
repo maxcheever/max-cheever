@@ -1,6 +1,16 @@
 * {
   cursor: url("../cursor/gallery-cursor.png"), default;
   box-sizing: border-box;
+  font-family: Fredoka one;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* this is to remove the scrollbar from view */
@@ -17,13 +27,12 @@ body {
 .gallery {
   width: 90vw;
   margin: 0 auto;
+  animation: fade 4s both 1s;
 }
 
 .large-img-container {
   margin-top: 3rem;
   position: relative;
-  /* outline: 3px inset grey;
-  outline-offset: 2px; */
 }
 
 #large-img {
@@ -32,24 +41,10 @@ body {
   height: auto;
 }
 
-#main-txt {
-  display: block;
-  text-align: center;
-
-  /* uncomment 32-34 if you want the text to appear on the image */
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
-  
-  font-size: calc(1rem + 1vw);
-  font-weight: bold;
-  color: black;
-}
-
 p {
-  margin: 1rem 0 0;
-  font-size: calc(1rem + .5vw);
-  font-weight: bold;
+  font-size: 2vw;
+  text-align: center;
+  color: white;
 }
 
 .small-img-container {
@@ -65,8 +60,9 @@ p {
   min-width: 5rem;
   height: auto;
   margin: 1rem;
+  transition: all 0.75s;
 }
 
 .image:hover {
-  outline: 2px solid white;
+  transform: scale(1.1);
 }
