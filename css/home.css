@@ -95,7 +95,7 @@ a {
 }
 
 .woman {
-  height: 50vw;
+  height: 70vh;
   position: fixed;
   bottom: 0vw;
   right: 25vw;
@@ -266,11 +266,20 @@ a {
   }
 }
 
-/* this is because i was using vw with the woman so everything is going to shrink according to width and is sized according to width, but with devices like chromebooks, the width is a lot longer than the height so the woman is displayed quite large */
-@media screen and (max-height: 850px) {
+@media screen and (max-width: 1025px) {
 
   .woman {
-    height: 34vw;
+    height: 60vh;
+    position: fixed;
+    left: 12vw;
+  }
+
+}
+
+@media screen and (max-height: 840px) {
+
+  .woman {
+    height: 70vh;
     right: 30vw;
   }
 
@@ -342,13 +351,12 @@ a {
 
 }
 
-
 @media screen and (max-width: 565px) {
 
   .icon-container {
     position: fixed;
     top: 20vh;
-    left: 37vw;
+    left: 35vw;
   }
 
   .menu-icon {
@@ -373,7 +381,7 @@ a {
   }
 
   .woman {
-    height: 40vh;
+    height: 39vh;
     position: fixed;
     right: 18.5vw;
   }
@@ -420,6 +428,22 @@ a {
     position: fixed;
     top: 85vh;
     left: 32.5vw;
+  }
+
+}
+
+@media screen and (max-width: 280px) {
+
+  .icon-container {
+    position: fixed;
+    top: 20vh;
+    left: 30vw;
+  }
+
+  .woman {
+    height: 35vh;
+    position: fixed;
+    right: 18.5vw;
   }
 
 }
