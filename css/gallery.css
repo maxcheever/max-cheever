@@ -1,1 +1,7 @@
-/* this is also for working on if I finish early (see gallery.html) */
+* {
+  cursor: url("../cursor/gallery-cursor.png"), default;
+}
+
+body {
+  background-color: black;
+}
