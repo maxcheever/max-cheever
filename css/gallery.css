@@ -1,17 +1,17 @@
 * {
   cursor: url("../cursor/gallery-cursor.png"), default;
+  box-sizing: border-box;
+}
+
+/* this is to remove the scrollbar from view */
+::-webkit-scrollbar {
+  background: transparent;
+  width: 0px;
 }
 
 body {
   background-color: black;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin:0;
+  margin: 0;
 }
 
 .gallery {
@@ -22,8 +22,8 @@ body {
 .large-img-container {
   margin-top: 3rem;
   position: relative;
-  outline: 3px inset grey;
-  outline-offset: 2px;
+  /* outline: 3px inset grey;
+  outline-offset: 2px; */
 }
 
 #large-img {
@@ -68,5 +68,5 @@ p {
 }
 
 .image:hover {
-  outline: 2px solid;
+  outline: 2px solid white;
 }

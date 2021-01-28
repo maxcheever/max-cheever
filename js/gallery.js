@@ -24,3 +24,4 @@ for (const element of imagesList){
     largeImage.setAttribute('height', height)
     imageText.textContent = text
   })
+}
