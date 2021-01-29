@@ -57,7 +57,7 @@ a {
 
 .menu-container:hover .gallery-container {
   display: block;
-  animation: fade 5s both;
+  animation: fade 1.2s linear both;
 }
 
 .gallery-icon {
