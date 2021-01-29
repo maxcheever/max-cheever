@@ -4,6 +4,74 @@
   font-family: Fredoka one;
 }
 
+/* I made the color change alternate and infinite so that after finishing, it would start again on the color that it finished on */
+body {
+  animation: color-change 10s linear infinite alternate both 2s;
+}
+
+@keyframes color-change {
+  0% {
+    background: #052d30;
+  }
+  50% {
+    background: #050831;
+  }
+  100% {
+    background: #1f082c;
+  }
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  margin-top: 1vh;
+  margin-left: 4.1vw;
+  animation: fade 4s both 2s;
+}
+
+.back-button:hover {
+  animation: fade 4s both 2s, bounce 1.25s ease-out both;
+}
+
+/* i put translateX(0) twice in a row in two places to effect the timing of the animation without messing with the cubic bezier (in other words, i could still use ease-in) */
+@keyframes bounce {
+	0% {
+		transform: translateX(0)
+	}
+  20% {
+    transform: translateX(0)
+  }
+	40% {
+		transform: translateX(-30px)
+	}
+  50% {
+    transform: translateX(0)
+  }
+	60% {
+		transform: translateX(-15px)
+	}
+  80% {
+    transform: translateX(0)
+  }
+  100% {
+    transform: translateX(0)
+  }
+}
+
+.back-icon {
+  color: white;
+  font-size: 3vw
+}
+
+.back-text {
+  color: white;
+  font-size: 2vw;
+}
+
+a {
+  text-decoration: none;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
@@ -27,6 +95,7 @@ body {
 .gallery {
   width: 90vw;
   margin: 0 auto;
+  margin-top: -6vh;
   animation: fade 4s both 2s;
 }
 
@@ -41,7 +110,7 @@ body {
   height: auto;
 }
 
-p {
+.explain {
   font-size: 2vw;
   text-align: center;
   color: white;
@@ -65,4 +134,20 @@ p {
 
 .image:hover {
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 800px) {
+
+  .explain {
+    font-size: 3vw;
+  }
+
+  .back-icon {
+    font-size: 4vw;
+  }
+
+  .back-text {
+    font-size: 3vw;
+  }
+
 }
