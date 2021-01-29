@@ -27,7 +27,7 @@ body {
 .gallery {
   width: 90vw;
   margin: 0 auto;
-  animation: fade 4s both 1s;
+  animation: fade 4s both 2s;
 }
 
 .large-img-container {
