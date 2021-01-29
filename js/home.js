@@ -32,6 +32,15 @@ const link = document.getElementById('link')
 
 box_3.addEventListener('click', function() {
 
-  social_icons.style.animation = 'fade 2s ease-in-out both'
-  link.style.animation = 'fade 2s ease-in-out both'
+  social_icons.style.animation = 'fade 0.1s ease-in-out both'
+  link.style.animation = 'fade 0.1s ease-in-out both'
+})
+
+
+const box_4 = document.getElementById('box4')
+const resume = document.getElementById('resume')
+
+box_4.addEventListener('click', function() {
+
+  resume.style.animation = 'fade 2s ease-in-out both'
 })

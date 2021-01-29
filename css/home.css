@@ -232,6 +232,23 @@ a {
   color: black;
 }
 
+.resume {
+  display: none;
+  font-family: Fredoka one;
+  font-size: 2.5vw;
+  position: relative;
+  top: 17vh;
+}
+
+.resume-link {
+  text-decoration: none;
+}
+
+.resume-container:hover .resume {
+  display: block;
+  animation: fade 2s ease-in-out both;
+}
+
 #social-icons {
   font-size: 3vw;
   margin-left: 2vw;
@@ -309,10 +326,6 @@ a {
 
 }
 
-/* @media screen and (max-width: 450px) {
-
-} */
-
 @media screen and (max-height: 840px) {
 
   .woman {
@@ -384,6 +397,12 @@ a {
     position: fixed;
     top: 62vh;
     left: 59vw;
+  }
+
+  .resume {
+    position: fixed;
+    top: 84vh;
+    left: 60.5vw;
   }
 
 }
@@ -467,6 +486,12 @@ a {
     left: 32.5vw;
   }
 
+  .resume {
+    position: fixed;
+    top: 80vh;
+    left: 60.5vw;
+  }
+  
 }
 
 @media screen and (max-width: 280px) {
