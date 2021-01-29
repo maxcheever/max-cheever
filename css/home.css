@@ -324,6 +324,42 @@ a {
     left: 12vw;
   }
 
+  .gallery-text {
+    position: fixed;
+    top: 51vh;
+    left: 3vw;
+  }
+
+  .instagram {
+    position: fixed;
+    top: 91.5vh;
+    left: 9.25vw;
+  }
+
+  .twitter-link {
+    position: fixed;
+    top: 91.5vh;
+    left: 16vw;
+  }
+
+  .snapchat {
+    position: fixed;
+    top: 91.5vh;
+    left: 23.75vw;
+  }
+
+  .tik-tok {
+    position: fixed;
+    top: 91.5vh;
+    left: 30.5vw;
+  }
+
+  .resume {
+    position: fixed;
+    top: 85vh;
+    left: 60.5vw;
+  }
+
 }
 
 @media screen and (max-height: 840px) {
@@ -491,7 +527,7 @@ a {
     top: 80vh;
     left: 60.5vw;
   }
-  
+
 }
 
 @media screen and (max-width: 280px) {
