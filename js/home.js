@@ -1,17 +1,37 @@
-// gettting the elements to be controlled by the javascript
 const open = document.getElementById('open-menu')
 const menu = document.getElementById('menu')
 
-// waiting for a click on the "open-menu" icon
 open.addEventListener('click', function() {
 
-  // changing each elements CSS based on this click
+  
   menu.style.animation = 'fade 1s linear forwards'
 })
 
-// waiting for a click on the "close-menu" icon
-close.addEventListener('click', function() {
 
-  // changing each elements CSS based on this click
-  menu.style.animation = 'fade 1s linear forwards'
+const box_1 = document.getElementById('box1')
+const number = document.getElementById('number')
+
+box_1.addEventListener('click', function() {
+
+  number.style.animation = 'fade 2s ease-in-out both'
+})
+
+
+const box_2 = document.getElementById('box2')
+const email = document.getElementById('email')
+
+box_2.addEventListener('click', function() {
+
+  email.style.animation = 'fade 2s ease-in-out both'
+})
+
+
+const box_3 = document.getElementById('box3')
+const social_icons = document.getElementById('social-icons')
+const link = document.getElementById('link')
+
+box_3.addEventListener('click', function() {
+
+  social_icons.style.animation = 'fade 2s ease-in-out both'
+  link.style.animation = 'fade 2s ease-in-out both'
 })
