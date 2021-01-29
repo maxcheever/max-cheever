@@ -457,14 +457,14 @@ a {
 
   .gallery-icon {
     position: fixed;
-    top: 46vh;
+    top: 40vh;
     left: 3vw;
   }
 
   .gallery-text {
     position: fixed;
-    top: 50vh;
-    left: 3vw;
+    top: 43.5vh;
+    left: 2.75vw;
   }
 
   .logo {
@@ -493,33 +493,33 @@ a {
 
   #link {
     font-family: Fredoka One;
-    font-size: 1.5vw;
+    font-size: 1vw;
     text-decoration: none;
     color: black;
   }
 
   .instagram {
     position: fixed;
-    top: 85vh;
-    left: 1vw;
+    top: 83vh;
+    left: 2.5vw;
   }
 
   .twitter-link {
     position: fixed;
-    top: 85vh;
-    left: 10.5vw;
+    top: 83vh;
+    left: 12.5vw;
   }
 
   .snapchat {
     position: fixed;
-    top: 85vh;
-    left: 22vw;
+    top: 83vh;
+    left: 24vw;
   }
 
   .tik-tok {
     position: fixed;
-    top: 85vh;
-    left: 32.5vw;
+    top: 83vh;
+    left: 34.5vw;
   }
 
   .resume {
