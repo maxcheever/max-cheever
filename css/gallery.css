@@ -82,10 +82,10 @@ a {
 }
 
 /* this is to remove the scrollbar from view */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   background: transparent;
   width: 0px;
-}
+} */
 
 body {
   background-color: black;
@@ -105,8 +105,9 @@ body {
 }
 
 #large-img {
-  margin: 0 auto;
-  width: 100%;
+  /* margin: 0 auto; */
+  margin-left: 25%;
+  width: 50%;
   height: auto;
 }
 
